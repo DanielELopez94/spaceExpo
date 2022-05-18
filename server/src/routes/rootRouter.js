@@ -1,4 +1,5 @@
 import express from "express";
+import nasaApiRouter from "./api/v1/nasaApiRouter.js";
 import userSessionsRouter from "./api/v1/userSessionsRouter.js";
 import usersRouter from "./api/v1/usersRouter.js";
 import clientRouter from "./clientRouter.js";
@@ -8,6 +9,6 @@ rootRouter.use("/", clientRouter);
 
 rootRouter.use("/api/v1/user-sessions", userSessionsRouter);
 rootRouter.use("/api/v1/users", usersRouter); //place your server-side routes here
-
+rootRouter.use("/api/v1/dailyImage", nasaApiRouter);
 
 export default rootRouter;
