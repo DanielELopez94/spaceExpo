@@ -12,7 +12,7 @@ class OpenNASAClient {
       const responseBody = apiResponse.body
       return responseBody
     } catch (error) {
-      return {error: error.message}
+      return { error: error.message }
     }
   }
 }
