@@ -1,7 +1,8 @@
 import got from "got"
+import dotenv from 'dotenv'
+dotenv.config()
 
-const openNasaApiKey = process.env.NASA_APOD_KEY
-// we'll want to move this to the ENV file like the Session secret is
+const openNasaApiKey = process.env.NASA_APOD_API
 
 class OpenNASAClient {
   static async getImageDetails() {

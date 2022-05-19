@@ -18,5 +18,8 @@
   },
   "engines": {
     "node": "^14.19"
+  },
+  "dependencies": {
+    "dotenv": "8.2.0"
   }
 }
