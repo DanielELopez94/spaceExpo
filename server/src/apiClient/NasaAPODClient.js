@@ -17,7 +17,6 @@ class OpenNASAClient {
   }
 }
 
-
 // class OpenNASAClient {
 //   static async getImageDetails(date) {
 //     try {

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 
+
 const SpaceDailyMainPage = (props) => {
   const [dailyImage, setDailyImage] = useState({})
 
