@@ -17,4 +17,18 @@ class OpenNASAClient {
   }
 }
 
+
+// class OpenNASAClient {
+//   static async getImageDetails(date) {
+//     try {
+//       const url = `https://api.nasa.gov/planetary/apod?api_key=${openNasaApiKey}&date=${date}`
+//       const apiResponse = await got(url)
+//       const responseBody = apiResponse.body
+//       return responseBody
+//     } catch (error) {
+//       return { error: error.message }
+//     }
+//   }
+// }
+
 export default OpenNASAClient
