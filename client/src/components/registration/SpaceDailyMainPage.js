@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 
 
 const SpaceDailyMainPage = (props) => {
+  
   const [dailyImage, setDailyImage] = useState({})
 
   const getDailySpaceImage = async () => {
@@ -14,8 +15,7 @@ const SpaceDailyMainPage = (props) => {
       throw (error)
       } 
       const body = await response.json()
-
-    setDailyImage(body)
+      setDailyImage(body)
     } catch (error) {
       console.error(`${error.message}`)
     }

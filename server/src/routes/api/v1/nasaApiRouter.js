@@ -17,9 +17,10 @@ nasaApiRouter.get("/", async (req, res) => {
   }
 })
 
-nasaApiRouter.get("/dailySpaceImage", async (req, res) => {
+nasaApiRouter.get("/:date", async (req, res) => {
+  const { date } = req.params
   try {
-    const spaceResponse = await OpenNASAClient.getImageDetails(date)
+    const spaceResponse = await OpenNASAClient.getImageByDate(date)
     const spaceImageData = JSON.parse(spaceResponse)
     return res
     .set({ "Content-Type": "application/json" })

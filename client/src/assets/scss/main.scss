@@ -25,22 +25,26 @@ body {
 }
 
 .image {  
+  display: block;
   border-radius: 25px;
   border: 2px solid #000000;
-  width: 1000px; 
+  max-width: 50%;
+  height: auto;
   float: left; 
   margin-right: 1em;
   margin-left: 1em;
+
 }
 
 .explanation {
   text-shadow: 3px 3px #000000;
   margin-top: 1em;
   color: #ffffff;
-  text-size-adjust: 1;
+  text-size-adjust: 1px;
   width: auto;
   margin-right: 1em;
   margin-left: 1em;
+  max-width: fit-content;
 }
 
 .text-body {
@@ -49,10 +53,6 @@ body {
 
 .text-color {
   color: #ffffff;
-}
-
-.text-color {
-  color: #ffffff
 }
 
 .text-box-radius {
@@ -91,4 +91,15 @@ body {
   background-color: rgb(8, 8, 108);
   box-shadow: 0 2px #666;
   transform: translateY(4px);
+}
+
+.date-picker {
+  border-radius: 25px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.select-date {
+  color: #ffffff;
+  text-shadow: 3px 3px #000000;
 }

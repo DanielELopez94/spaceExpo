@@ -10,7 +10,6 @@ rootRouter.use("/", clientRouter);
 rootRouter.use("/api/v1/user-sessions", userSessionsRouter);
 rootRouter.use("/api/v1/users", usersRouter);
 rootRouter.use("/api/v1/dailyImage", nasaApiRouter);
-// rootRouter.use("/api/v1/daily/dailySpaceImage", nasaApiRouter)
 
 rootRouter.get("/", (req, res) => {
   res.redirect("/dailyImage")
