@@ -30,7 +30,7 @@ const SpaceDailyMainPage = (props) => {
   
     <div className="text-body" >
     
-        <div className="body">
+        <div className="canvas">
           <img className="image" src={dailyImage.hdurl}/>
           </div>
 

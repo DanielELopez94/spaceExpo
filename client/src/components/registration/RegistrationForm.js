@@ -121,7 +121,7 @@ const RegistrationForm = () => {
           </label>
         </div>
         <div>
-          <input type="submit" className="button" value="Register" />
+          <input type="submit" className="text-box-radius" value="Register" />
         </div>
       </form>
     </div>
