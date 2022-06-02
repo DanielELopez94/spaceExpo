@@ -25,9 +25,9 @@ const TopBar = ({ user }) => {
       <div className="top-bar-left">
         <ul className="menu">
           <li className="menu-text">SpaceExpo</li>
-          <li>
+          {/* <li>
             <Link to="/">Home</Link>
-          </li>
+          </li> */}
         </ul>
       </div>
       <div className="top-bar-right">

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import DatePicker from "react-datepicker"
 import "react-datepicker/dist/react-datepicker.css";
+import SpaceNotes from "./SpaceNotes"
 
 const SpaceDailyShowPage = (props) => {
 
@@ -37,20 +38,19 @@ const handleShowImageButton = (event) => {
   getDailyStartDate()
 }
 
-// function called showImage
-// function is invoking  getDailyStartDate()
-
   return (
 
     <div className="text-body"> 
     <div className="date-picker">
     <div className="select-date">Select Date:</div>
-    <DatePicker
+    <div className="date-picker">
+          <DatePicker
       selected={pickedDate}
       onChange={handleDateChange}
     />
+    <button className="sign" type="button" onClick={handleShowImageButton}>Submit Date</button>
+    </div>
       </div>  
-      <button className="sign" type="button" onClick={handleShowImageButton}>Submit Date</button>
     <div>
       <div>
         <img className="image" src={imageData.hdurl}/>
@@ -68,8 +68,7 @@ const handleShowImageButton = (event) => {
           </h5>
           </div>
       </div>
-      
-    {/* // button with onClick, oClick have a function (handleShowImage) */}
+      <SpaceNotes />
     </div>
   )
 }
